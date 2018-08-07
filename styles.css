@@ -3,6 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
+  background-image: url("https://pre00.deviantart.net/c58c/th/pre/i/2014/175/1/e/spirited_away_background_by_alwaysmadabout-d7nrv7h.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color:#444;
   font-size: 18px;
 }
@@ -23,9 +26,23 @@ body, a:link, a:visited, a:active{
 .totoro{
   max-height: 15px;
   max-width: 50px;
-  position:absolute;
+  position:relative; 
+/* changed from absolute to relative*/
   width: 10%;
   height: 10%;
+}
+
+@keyframes move {
+  from {
+    left: 5%; 
+  }
+  to {
+    left: 800%;
+  }
+}
+
+.totoro {
+  animation: 7s move ; 
 }
 
 /*.dancer{
@@ -37,7 +54,7 @@ body, a:link, a:visited, a:active{
 .shinchan{
   max-height: 15px;
   max-width: 50px;
-  position:absolute;
+  position:relative;
   width: 10%;
   height: 10%;
 }

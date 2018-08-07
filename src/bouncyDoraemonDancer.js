@@ -4,7 +4,7 @@ var BouncyDoraemonDancer = function(top, left, timeBetweenSteps) {
 };
 
 BouncyDoraemonDancer.prototype = Object.create(MakeDancer.prototype);
-BouncyDoraemonDancer.prototype.constructor = BouncyDancer;
+BouncyDoraemonDancer.prototype.constructor = BouncyDoraemonDancer;
 
 BouncyDoraemonDancer.prototype.step = function() {
   // call the old version of step at the beginning of any call to this new version of step
