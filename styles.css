@@ -20,8 +20,24 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+.totoro{
+  max-height: 15px;
+  max-width: 50px;
+  position:absolute;
+  width: 10%;
+  height: 10%;
+}
+
+/*.dancer{
   border:10px solid blue;
   border-radius:10px;
   position:absolute;
+}*/
+
+.shinchan{
+  max-height: 15px;
+  max-width: 50px;
+  position:absolute;
+  width: 10%;
+  height: 10%;
 }

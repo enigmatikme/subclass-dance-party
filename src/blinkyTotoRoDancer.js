@@ -4,6 +4,9 @@ var BlinkyTotoRoDancer = function(top, left, timeBetweenSteps) {
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
   // this.oldStep = MakeDancer.step
+  this.$node.append('<img src = https://media.giphy.com/media/pt0EKLDJmVvlS/giphy.gif height="100" width="100">');
+  this.$node.addClass('totoro');
+  
 };
 
 BlinkyTotoRoDancer.prototype = Object.create(MakeDancer.prototype);
