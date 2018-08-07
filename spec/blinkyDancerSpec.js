@@ -6,25 +6,6 @@ describe('blinkyDancer', function() {
   beforeEach(function() {
     clock = sinon.useFakeTimers();
     blinkyDancer = new MakeBlinkyDancer(10, 20, timeBetweenSteps);
-/*
-blinkydancer = var MakeBlinkyDancer = function(top, left, timeBetweenSteps) {
-  //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
-
-    MakeDancer.call(this, top, left, timeBetweenSteps);
-        --> var MakeDancer = function(top, left, timeBetweenSteps) {
-              
-            this.$node = $('<span class="dancer"></span>');
-            this.message = 'yoyoyo';
-
-            this.step();
-            this.setPosition(top, left);
-            };
-    // this.oldStep = makeDancer.step;  
-    this.oldStep = MakeDancer.message;
-  };
-
-
-*/
   });
 
   it('should have a jQuery $node object', function() {
