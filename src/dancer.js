@@ -2,7 +2,7 @@
 var MakeDancer = function(top, left, timeBetweenSteps) {
   // use jQuery to create an HTML <span> tag
 
-  this.$node = $('<span class="dancer"></span>');  
+  this.$node = $('<div class="runAway"></div>');  
   // this.message = 'yoyoyo';
 
   this.timeBetweenSteps = timeBetweenSteps;
@@ -11,6 +11,21 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
   // this one sets the position to some random default point within the body
   this.setPosition(top, left);
+  $('.runAway').mouseover(function() {  
+    // var offset = $(this).offset();  
+    // alert('hello');
+    var maxX = $(window).width() - $(this).width();
+    var maxY = $(window).height() - $(this).height();
+    $(this).css('left', getRandomInt(0, maxX));
+    $(this).css('top', getRandomInt(0, maxY));
+    // $(this).css({
+    //   'left': getRandomInt(0, maxX),
+    //   'top': getRandomInt(0, maxY)
+    // });
+  });
+  var getRandomInt = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
 };
 
 MakeDancer.prototype = {

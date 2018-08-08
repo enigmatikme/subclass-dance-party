@@ -31,7 +31,7 @@ body, a:link, a:visited, a:active{
   width: 10%;
   height: 10%;
 }
-
+/*
 @keyframes move {
   from {
     left: 5%; 
@@ -44,17 +44,27 @@ body, a:link, a:visited, a:active{
 .totoro {
   animation: 7s move ; 
 }
-
+*/
 /*.dancer{
   border:10px solid blue;
   border-radius:10px;
   position:absolute;
 }*/
-
+.runAway {
+  position: absolute;
+}
+/*.runAway:hover {
+  
+  /*background: red;*/
+  /*display: none;
+  opacity: 0;
+  transition: .8s;
+  
+}*/
 .shinchan{
   max-height: 15px;
   max-width: 50px;
-  position:relative;
+  position:absolute;
   width: 10%;
   height: 10%;
 }
